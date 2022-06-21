@@ -3,9 +3,10 @@ import { useState } from 'react';
 
 export const AddCategory = ({ onNewCategory }) => {
 
-    const [ inputValue, setInputValue ] = useState('');
+    const [ inputValue, setInputValue ] = useState(''); //estado
 
-    const onInputChange = ({ target }) => {
+    const onInputChange = ({ target }) => {    //metodo submit
+        
         setInputValue( target.value );
     }
 
@@ -29,3 +30,5 @@ export const AddCategory = ({ onNewCategory }) => {
         </form>
     )
 }
+
+
